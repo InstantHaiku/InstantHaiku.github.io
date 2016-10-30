@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>InstantHaiku</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+
+  <div id="container">
+	  <h1>InstantHaiku</h1>
+	  <h2>El amor está en otra parte</h2>
+
+    <div id="images">
+      <img src="img/img1.jpg" alt="love">
+      <img src="img/img1.jpg" alt="love">
+      <img src="img/img1.jpg" alt="love">
+    </div>
+
+    <div id="haiku">
+
+    </div>
+
+    <div class="button">
+      <button type="button"onclick="window.location.href='';">RANDOM</button>
+    </div>
+  </div>
+
+
+
+  <script>
+    (function() {
+      var quotes = [
+        "Cae sábado</br>al baile, estallados</br>besar a todos",
+        "Nah, ya fue</br>ruidito y pachanga</br>musa de guerrín",
+        "Te abandoné</br>pero bue, no juzguen la</br>serie la seguí",
+        "Sólo quería</br>garchar en algún baño</br>charlas y manos",
+        "Wache rapera</br>afeitame la nena</br>en primavera",
+        "Guacha no flashés</br>dura lo que la tuca</br>mi buena onda",
+        "Cumbia le dije</br>no sé quién me gusta más</br>si vos o tu ex"
+      ];
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("haiku").innerHTML = '<p>' + quote + '</p>'
+    })();
+  </script>
+</body>
+</html>
