@@ -52,13 +52,23 @@ p {
 #container #start-but {
 	margin-top: 150px;
 }
+#container #images {
+	display: block;
+}
+
+#container #images div {
+	width: 30%;
+	height: 300px;
+	margin: 50px 2.5% 20px 2.5%;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+}
 
 #container #images img {
-	width: 30%;
-	height: 30%;
-	margin: 50px 2% 20px 2%;
-	padding: 0;
-	background-color: red;
+	height: auto; 
+    width: auto; 
+    max-width: 400px;
 }
 
 #container #images :first-child {

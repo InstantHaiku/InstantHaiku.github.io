@@ -13,6 +13,7 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
 </head>
 
 <body>
@@ -23,21 +24,24 @@
 	  <h2>El amor está en otra parte</h2>
 
     <div id="images">
-      <img src="img/img1.jpg" alt="love">
-      <img src="img/img1.jpg" alt="love">
-      <img src="img/img1.jpg" alt="love">
+      <div id="img1">
+        <img>
+      </div>
+      <div id="img2">
+        <img>
+      </div>
+      <div id="img3">
+        <img>
+      </div>
     </div>
 
     <div id="haiku">
-
     </div>
 
     <div class="button">
       <button type="button"onclick="window.location.href='';">RANDOM</button>
     </div>
   </div>
-
-
 
   <script>
     (function() {
@@ -50,9 +54,40 @@
         "Guacha no flashés</br>dura lo que la tuca</br>mi buena onda",
         "Cumbia le dije</br>no sé quién me gusta más</br>si vos o tu ex"
       ];
+      
+
+
+      var imgs1 = [
+        "http://cde.peru.com/ima/0/1/2/6/9/1269112/611x458/pelicula.jpg",
+        "http://images.et.eltiempo.digital/Multimedia/galeria_fotos/curiosidades6/IMAGEN/IMAGEN-12987618-2.png",
+      ];
+
+      var imgs2 = [
+        "https://s-media-cache-ak0.pinimg.com/564x/c2/4b/a9/c24ba9ef241b0a578feca145805b0f70.jpg",
+        "https://s-media-cache-ak0.pinimg.com/564x/02/8a/51/028a517d668405418cb4de73a104a2b0.jpg"
+      ];
+
+      var imgs3 = [
+        "http://67.media.tumblr.com/59bfe8e971c0206cbb2277de52e02a7c/tumblr_mqps9gkkmG1r32xafo1_1280.jpg",
+        "http://data.whicdn.com/images/48566037/large.jpg"
+      ];
+
+
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
       document.getElementById("haiku").innerHTML = '<p>' + quote + '</p>'
+
+      var img1 = imgs1[Math.floor(Math.random() * imgs1.length)];
+      document.getElementById("img1").getElementsByTagName("img")[0].src=img1;
+
+      var img2 = imgs2[Math.floor(Math.random() * imgs2.length)];
+      document.getElementById("img2").getElementsByTagName("img")[0].src=img2;
+
+      var img3 = imgs3[Math.floor(Math.random() * imgs3.length)];
+      document.getElementById("img3").getElementsByTagName("img")[0].src=img3;
+
+
     })();
   </script>
+
 </body>
 </html>
