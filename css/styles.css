@@ -2,7 +2,7 @@
 #container {
 	width: 1100px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 45px;
     padding: 0;
 }
 
@@ -70,7 +70,7 @@ p {
 #container #images div {
 	width: 30%;
 	height: 300px;
-	margin: 50px 2.5% 20px 2.5%;
+	margin: 30px 2.5% 20px 2.5%;
 	padding: 0;
 	overflow: hidden;
 	float: left;
@@ -105,5 +105,12 @@ p {
     -webkit-column-gap: 70px; /* Chrome, Safari, Opera */
     -moz-column-gap: 70px; /* Firefox */
     column-gap: 70px;
+}
 
+#info p {
+	text-align: justify;
+}
+
+#info p:first-child {
+	margin-top: 0;
 }
