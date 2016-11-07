@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>InstantHaiku</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="container">
+	  <h1>InstantHaiku</h1>
+	  <h2>El amor está en otra parte</h2>
+
+    <div id="info">
+        
+      <p>
+        <b>InstantHaiku</b> es un sitio inspirado por el grupo de facebook <b>Haikumbia</b> de cuyos textos surgen los haikus* de la página. Los versos de los originales fueron mezclados entre sí, adquiriendo un nuevo sentido.
+      </p>
+      <p>
+        Las imágenes que los acompañan son resultado de las búsquedas en google: “<b>relación amorosa película</b>”, “<b>amor instagram tumblr</b>” y “<b>pareja pinterest</b>”, respectivamente. <br>
+      </p>
+      <p>
+        Cuando el usuario aprieta el botón para crear su haiku, la página ordena aleatoriamente las frases cargadas y los resultados de las búsquedas, armando un haiku distinto cada vez.
+      </p>
+      <p>
+        El proyecto surge a partir de la reflexión sobre el desapego e inmediatez de las relaciones amorosas de nuestros tiempos. Al realizar las búsquedas pude corroborar que tanto los medios masivos como las redes sociales nos asedian con imágenes de parejas felices, hermosas y heteronormadas. Nuestros deseos se configuran en base a las relaciones amorosas que vemos mediatizadas. 
+      </p>
+      <p>
+        De esta manera consumimos una realidad distorsionada que a la vez reproducimos con las imágenes que compartimos en la web. La realidad distorsionada simula ser la verdadera y provoca que, al vivir la experiencia, el resultado nunca esté a la altura de nuestras expectativas. 
+      </p>
+      <p>
+        *Haiku: Poema japonés de 17 sílabas, conformado por tres versos. Un primer verso de 5 sílabas, el siguiente de 7 y otro de 5. Esta regla varía cuando se produce una sinalefa (unión sonora de la/s última/s vocal/es de una palabra con la/s primera/s de la siguiente).
+      </p>
+    </div> 
+	  <div class="button">
+      <button type="button" id="back-but" onclick="goBack()">Volver</button>
+    </div> 
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
